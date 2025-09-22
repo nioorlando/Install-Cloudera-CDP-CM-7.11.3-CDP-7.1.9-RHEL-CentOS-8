@@ -26,14 +26,14 @@ The goal is to provide a **clear, repeatable playbook** for installation and val
 ---
 
 ##📂 Repository Structure
-
+```text
 Install-Cloudera-CDP-CM-7.11.3-CDP-7.1.9-RHEL-CentOS-8/
 ├── README.md
 ├── Prerequisites_OS_Preparation.md
 ├── install_cm.md
 ├── Install_PostgreSQL_14.9.md
 └── images/ 
-
+```
 ---
 
 ## 🛠 Requirements
