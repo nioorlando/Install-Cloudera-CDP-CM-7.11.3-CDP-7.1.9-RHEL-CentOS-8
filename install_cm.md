@@ -1,4 +1,4 @@
-# Install Cloudera Manager 7.11.3
+# Install Cloudera Manager 7.11.3 & CDP Runtime 7.1.9 (Full Guide)
 
 This guide describes how to install **Cloudera Manager 7.11.3** and prepare it for managing your **CDP Runtime 7.1.9** cluster.
 
