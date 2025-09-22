@@ -13,17 +13,26 @@ The goal is to provide a **clear, repeatable playbook** for installation and val
    - Disable firewall & set SELinux permissive  
    - Install Python 3.8, Java 11, PostgreSQL JDBC  
 
-2. [Install Cloudera Manager](install_cm.md)  
+2. [Install Cloudera Manager & CDP Runtime](install_cm.md)  
    - Configure Cloudera repo  
    - Install CM server, agent, and daemons  
    - Setup CM database (PostgreSQL)  
    - Start CM services and verify UI  
-
-3. [Install CDP Runtime](install_cdp.md)  
    - Deploy CDP 7.1.9 parcels  
    - Add cluster via CM wizard  
    - Assign services and role configuration  
    - First run and health checks  
+
+---
+
+##📂 Repository Structure
+
+Install-Cloudera-CDP-CM-7.11.3-CDP-7.1.9-RHEL-CentOS-8/
+├── README.md
+├── Prerequisites_OS_Preparation.md
+├── install_cm.md
+├── Install_PostgreSQL_14.9.md
+└── images/ 
 
 ---
 
