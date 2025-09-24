@@ -178,7 +178,6 @@ Klik **Test Connection** sampai **Successful**.
 ![Review Changes](images/cm_review_changes.png)
 - Default FS: `HDFS`
 - Block size: `128 MB`
-- Iceberg: sesuai kebutuhan.
 
 ### 3.6 Command Details
 ![Command Details](images/cm_command_details.png)
