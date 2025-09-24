@@ -27,6 +27,8 @@ sysctl vm.swappiness=1
 systemctl disable --now firewalld
 systemctl disable --now iptables || true 
 ```
+- Misal ada error: Failed to disable unit: Unit file iptables.service does not exist.
+- Lewati saja step ini karena emang niat awal untuk disable jadi kalo tidak ada juga tidak masalah
 
 ### 1.4 Set SELinux to Permissive
 ```bash
