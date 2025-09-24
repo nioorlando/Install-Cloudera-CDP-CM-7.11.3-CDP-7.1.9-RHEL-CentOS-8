@@ -1,7 +1,7 @@
 # 📘 Instalasi & Konfigurasi PostgreSQL 14.9 (Build from Source)
 
 Panduan ini berisi langkah-langkah instalasi PostgreSQL 14.9 dari source, konfigurasi dasar (logging + akses), serta pembuatan user & database untuk aplikasi.  
-**Catatan placeholder:** isi nilai yang diapit tanda kurung, misal `(passwordnya)`, `(username)`, `(alamat_ip_server)` sesuai kebutuhanmu.
+**Catatan placeholder:** isi nilai yang diapit tanda kurung, misal `(password)`, `(username)`, `(alamat_ip_server)` sesuai kebutuhanmu.
 
 ---
 
@@ -166,7 +166,7 @@ su - postgres
 > Jika akses dari remote atau butuh host/port spesifik:
 ```bash
 psql -U (username) -d (namadb) -h (alamat_ip_server) -p 5432
-# lalu masukkan (passwordnya) saat diminta
+# lalu masukkan (password) saat diminta
 ```
 
 ---
@@ -197,7 +197,7 @@ psql
 
 Buat user & DB uji:
 ```sql
-CREATE USER dbuser WITH PASSWORD '(passwordnya)';
+CREATE USER dbuser WITH PASSWORD '(password)';
 CREATE DATABASE testdb OWNER dbuser;
 ```
 
@@ -231,7 +231,7 @@ GRANT SELECT, INSERT ON TABLES TO dbuser;
 
 ```bash
 psql -U dbuser -d testdb -h 127.0.0.1 -p 5432
-# masukkan (passwordnya) saat prompt
+# masukkan (password) saat prompt
 ```
 
 Uji query:
@@ -264,17 +264,17 @@ grep "duration" /opt/postgresql-14.9/data/log/postgresql-YYYY-MM-DD.log
 
 Jalankan di `psql` sebagai superuser (`postgres`):
 ```sql
--- Buat user/role (isi password dengan (passwordnya) masing-masing)
-CREATE ROLE scm            WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE rman           WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE rangeradmin    WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE rangerkms      WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE hue            WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE hive           WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE oozie          WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE schemaregistry WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE smm            WITH LOGIN PASSWORD '(passwordnya)';
-CREATE ROLE yarn           WITH LOGIN PASSWORD '(passwordnya)';
+-- Buat user/role (isi password dengan (password) masing-masing)
+CREATE ROLE scm            WITH LOGIN PASSWORD '(password)';
+CREATE ROLE rman           WITH LOGIN PASSWORD '(password)';
+CREATE ROLE rangeradmin    WITH LOGIN PASSWORD '(password)';
+CREATE ROLE rangerkms      WITH LOGIN PASSWORD '(password)';
+CREATE ROLE hue            WITH LOGIN PASSWORD '(password)';
+CREATE ROLE hive           WITH LOGIN PASSWORD '(password)';
+CREATE ROLE oozie          WITH LOGIN PASSWORD '(password)';
+CREATE ROLE schemaregistry WITH LOGIN PASSWORD '(password)';
+CREATE ROLE smm            WITH LOGIN PASSWORD '(password)';
+CREATE ROLE yarn           WITH LOGIN PASSWORD '(password)';
 CREATE ROLE kafka          WITH LOGIN PASSWORD 'kafka';
 CREATE ROLE cmf            WITH LOGIN PASSWORD 'cmf';
 
