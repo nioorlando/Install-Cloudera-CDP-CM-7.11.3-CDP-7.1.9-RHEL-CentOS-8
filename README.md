@@ -7,7 +7,7 @@ The goal is to provide a **clear, repeatable playbook** for installation and val
 
 ## 📖 Contents
 
-1. [Prerequisites & OS Preparation](prerequisites.md)  
+1. [Prerequisites & OS Preparation](Prerequisites_OS_Preparation.md)  
    - Disable Transparent Huge Pages (THP)  
    - Adjust swappiness  
    - Disable firewall & set SELinux permissive  
